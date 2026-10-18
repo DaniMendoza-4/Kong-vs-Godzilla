@@ -37,10 +37,10 @@ position = Vector2(113, 113)
 position = Vector2(210, 21)
 
 [node name="diamante3" parent="ContenedorDiamantes" unique_id=1787550309 instance=ExtResource("5_yhcpd")]
-position = Vector2(-180, 19)
+position = Vector2(-82, -76)
 
 [node name="diamante4" parent="ContenedorDiamantes" unique_id=1612192599 instance=ExtResource("5_yhcpd")]
-position = Vector2(-83, -77)
+position = Vector2(-176, 20)
 
 [node name="Personaje-kong" parent="." unique_id=1099182927 instance=ExtResource("3_0ruwa")]
 position = Vector2(-85, 39)

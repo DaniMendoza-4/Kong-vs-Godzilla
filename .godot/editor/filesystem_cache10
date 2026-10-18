@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792307086
+::res://::1792346627
 audio.gd::GDScript::3488631218649237155::1792305904::0::1::::<>Node<><>0<>0<><>::
 efectos.gd::GDScript::2938560152188771319::1792303553::0::1::::Efectos<>RefCounted<><>0<>0<><>::
 icon.svg::CompressedTexture2D::4216112701169564476::1788627983::1788627989::1::::<><><>0<>0<>3458e074557f6917680ab24293de0110<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -22,7 +22,7 @@ nivel_2.ogg::AudioStreamOggVorbis::6886593334327802127::1792096253::1792114873::
 nivel_3.ogg::AudioStreamOggVorbis::1265189558199633214::1792096253::1792114873::1::::<><><>0<>0<>a0a09cd1a7fadcdfe8b49e396b9d0e2a<>res://.godot/imported/nivel_3.ogg-02750b66e1a6b6cde113532bb7f6f5c8.oggvorbisstr::
 nivel_4.ogg::AudioStreamOggVorbis::8634010096580361074::1792096253::1792114873::1::::<><><>0<>0<>8f781ff69aa40f2fd4e31c6876eff39e<>res://.godot/imported/nivel_4.ogg-6dc878d278c03c53a3d897df5ea38ed6.oggvorbisstr::
 nivel_5.ogg::AudioStreamOggVorbis::3120590765122711336::1792096253::1792114873::1::::<><><>0<>0<>329b9bd16aef13c895db8518d30de3fc<>res://.godot/imported/nivel_5.ogg-966f4978c221aab73a1d9b9d650b8ddf.oggvorbisstr::
-::res://assets/sonidos/::1792308043
+::res://assets/sonidos/::1792308048
 boton_click.ogg::AudioStreamOggVorbis::6512440590448944697::1792125834::1792125923::1::::<><><>0<>0<>b6a71b3cccc427fe8695b2c904f1cbf8<>res://.godot/imported/boton_click.ogg-f1d788d4ea9c755d465965917a33e778.oggvorbisstr::
 boton_hover.ogg::AudioStreamOggVorbis::7312340316028640742::1792125834::1792125923::1::::<><><>0<>0<>c9c59ab303146f4bd1a59350d5db6114<>res://.godot/imported/boton_hover.ogg-fa97e1fa167e5920aba237ea12801fd4.oggvorbisstr::
 comer.ogg::AudioStreamOggVorbis::5892877925893672622::1792096253::1792114671::1::::<><><>0<>0<>93b104a925bc9c90bd9b86bd0fcd7879<>res://.godot/imported/comer.ogg-c1b21ee5ecc707b7b8596f10fe42b9db.oggvorbisstr::

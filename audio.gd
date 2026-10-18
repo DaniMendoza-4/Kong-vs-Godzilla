@@ -77,7 +77,7 @@ const MUSICAS_USADAS: Array[String] = ["musica_inicio", "nivel_1", "nivel_2", "n
 var volumen_sfx_db: float = 6.0 #0.0
 
 # Volumen general de la música
-var volumen_musica_db: float = 3.0 #-3.0
+var volumen_musica_db: float = 9.0 #-3.0
 
 # Tiempo mínimo entre dos sonidos iguales, evita que se repitan demasiado seguidos
 const ESPERA_GENERAL: float = 0.05
