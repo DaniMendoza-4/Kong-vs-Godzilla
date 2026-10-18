@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dtpgw8sqpdmnp"]
+
+[ext_resource type="Script" uid="uid://cwwb32ijvqx3q" path="res://ecenas/bola-leve/bola_leve.gd" id="1_oc8kc"]
+[ext_resource type="Texture2D" uid="uid://df1ssl8jur4uf" path="res://bolas-fuego/daño-leve-izquierda.png" id="1_t1abn"]
+[ext_resource type="Texture2D" uid="uid://xjq3feeb3qvo" path="res://bolas-fuego/daño-leve-arriba.png" id="3_ebowx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2u55a"]
+radius = 115.80952
+
+[node name="bola-leve" type="Area2D" unique_id=683968611]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_oc8kc")
+textura_horizontal = ExtResource("1_t1abn")
+textura_vertical = ExtResource("3_ebowx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1551820177]
+position = Vector2(-4.7683716e-07, 0)
+scale = Vector2(0.02212867, 0.023848686)
+texture = ExtResource("1_t1abn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=688853171]
+position = Vector2(-2, 1.4210853e-14)
+rotation = -1.5789677
+scale = Vector2(0.034539428, 0.03389469)
+skew = -0.00031387806
+shape = SubResource("CircleShape2D_2u55a")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dcekljbq7fh5d"]
+
+[ext_resource type="Script" uid="uid://gpyh6iot61jr" path="res://ecenas/contenedor-diamantes/contenedor_diamantes.gd" id="1_0jlxd"]
+
+[node name="ContenedorDiamantes" type="Node" unique_id=1604877687]
+script = ExtResource("1_0jlxd")

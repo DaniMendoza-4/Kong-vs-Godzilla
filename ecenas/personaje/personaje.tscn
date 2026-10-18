@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://6jvrreu22l6m"]
+
+[ext_resource type="Script" uid="uid://d04jwaf1xsash" path="res://ecenas/personaje/personaje.gd" id="1_gv4pl"]
+[ext_resource type="SpriteFrames" uid="uid://dtbxunpaypnot" path="res://ecenas/personaje/sprite_frames_personaje.tres" id="1_xi0pd"]
+[ext_resource type="Script" uid="uid://16gg78ucdij3" path="res://ecenas/personaje/vida_kong.gd" id="3_2nuix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gv4pl"]
+size = Vector2(16, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xxyf"]
+size = Vector2(16, 21)
+
+[node name="Personaje-Kong" type="CharacterBody2D" unique_id=1099182927 node_paths=PackedStringArray("animacion", "area_2D") groups=["jugador"]]
+collision_layer = 4
+script = ExtResource("1_gv4pl")
+animacion = NodePath("AnimatedSprite2D")
+area_2D = NodePath("Area2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1587138895]
+shape = SubResource("RectangleShape2D_gv4pl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1960339822]
+position = Vector2(0, -1.1920929e-07)
+scale = Vector2(0.03791469, 0.035532996)
+sprite_frames = ExtResource("1_xi0pd")
+animation = &"inactividad"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1712530692]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=628686059]
+shape = SubResource("RectangleShape2D_3xxyf")
+
+[node name="vida-kong" type="Node" parent="." unique_id=1968851486]
+script = ExtResource("3_2nuix")

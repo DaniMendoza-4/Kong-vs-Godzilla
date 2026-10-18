@@ -1,0 +1,61 @@
+[gd_scene format=4 uid="uid://u1kq5166gsug"]
+
+[ext_resource type="Script" uid="uid://ci7h4t0oqxttt" path="res://ecenas/final/final.gd" id="1_ic0jd"]
+[ext_resource type="Texture2D" uid="uid://cqbciu6ixpa6s" path="res://fondos/fondofinal.png" id="1_kuuaj"]
+[ext_resource type="TileSet" uid="uid://yqbe5krk7f4h" path="res://tileset/kongvsgodzilla.tres" id="2_m4hpx"]
+[ext_resource type="Texture2D" uid="uid://cm8bhp5brm0n2" path="res://assets/iconos/icono-boton1.png" id="3_v6xvi"]
+[ext_resource type="Texture2D" uid="uid://dky3vloepqge8" path="res://assets/iconos/icono-boton2.png" id="4_ic0jd"]
+
+[sub_resource type="SystemFont" id="SystemFont_rnhw8"]
+subpixel_positioning = 0
+
+[node name="final" type="Node2D" unique_id=2028422506]
+script = ExtResource("1_ic0jd")
+texto_creditos = "KONG VS GODZILLA
+
+Un  juego  creado  por
+Jose Daniel Mendoza
+
+Programacion y diseño
+Jose  Daniel  Mendoza
+
+Arte y sprites
+Jose  Daniel  Mendoza
+
+Musica y efectos de sonido
+Efectos de sonido y música de Pixabay
+
+Gracias por jugar"
+fuente = SubResource("SystemFont_rnhw8")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1975658904]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=548530168]
+position = Vector2(2.1338463e-05, 0.50000715)
+scale = Vector2(0.38956523, 0.3978328)
+texture = ExtResource("1_kuuaj")
+
+[node name="bordes" type="TileMapLayer" parent="." unique_id=358668315]
+tile_map_data = PackedByteArray("AADx/wgAAgACAAUAAADx/wcAAgACAAUAAADx/wYAAgACAAUAAADx/wUAAgACAAUAAADx/wQAAgACAAUAAADx/wMAAgACAAUAAADx/wIAAgACAAUAAADx/wEAAgACAAUAAADx/wAAAgACAAUAAADx////AgACAAUAAADx//7/AgACAAUAAADx//3/AgACAAUAAADx//z/AgACAAUAAADx//v/AgACAAUAAADx//r/AgACAAUAAADx//n/AgACAAUAAADx//j/AgACAAUAAADx//f/AgACAAUAAAAOAAgAAgACAAUAAAANAAgAAgACAAUAAAAMAAgAAgACAAUAAAALAAgAAgACAAUAAAAKAAgAAgACAAUAAAAJAAgAAgACAAUAAAAIAAgAAgACAAUAAAAHAAgAAgACAAUAAAAGAAgAAgACAAUAAAAFAAgAAgACAAUAAAAEAAgAAgACAAUAAAADAAgAAgACAAUAAAACAAgAAgACAAUAAAABAAgAAgACAAUAAAAAAAgAAgACAAUAAAD//wgAAgACAAUAAAD+/wgAAgACAAUAAAD9/wgAAgACAAUAAAD8/wgAAgACAAUAAAD7/wgAAgACAAUAAAD6/wgAAgACAAUAAAD5/wgAAgACAAUAAAD4/wgAAgACAAUAAAD3/wgAAgACAAUAAAD2/wgAAgACAAUAAAD1/wgAAgACAAUAAAD0/wgAAgACAAUAAADz/wgAAgACAAUAAADy/wgAAgACAAUAAAAOAAcAAgACAAUAAAAOAAYAAgACAAUAAAAOAAUAAgACAAUAAAAOAAQAAgACAAUAAAAOAAMAAgACAAUAAAAOAAIAAgACAAUAAAAOAAEAAgACAAUAAAAOAAAAAgACAAUAAAAOAP//AgACAAUAAAAOAP7/AgACAAUAAAAOAP3/AgACAAUAAAAOAPz/AgACAAUAAAAOAPv/AgACAAUAAAAOAPr/AgACAAUAAAAOAPn/AgACAAUAAAAOAPj/AgACAAUAAAAOAPf/AgACAAUAAAANAPf/AgACAAUAAAAMAPf/AgACAAUAAAALAPf/AgACAAUAAAAKAPf/AgACAAUAAAAJAPf/AgACAAUAAAAIAPf/AgACAAUAAAAHAPf/AgACAAUAAAAGAPf/AgACAAUAAAAFAPf/AgACAAUAAAAEAPf/AgACAAUAAAADAPf/AgACAAUAAAACAPf/AgACAAUAAAABAPf/AgACAAUAAAAAAPf/AgACAAUAAAD///f/AgACAAUAAAD+//f/AgACAAUAAAD9//f/AgACAAUAAAD8//f/AgACAAUAAAD7//f/AgACAAUAAAD6//f/AgACAAUAAAD5//f/AgACAAUAAAD4//f/AgACAAUAAAD3//f/AgACAAUAAAD2//f/AgACAAUAAAD1//f/AgACAAUAAAD0//f/AgACAAUAAADz//f/AgACAAUAAADy//f/AgACAAUAAAA=")
+tile_set = ExtResource("2_m4hpx")
+
+[node name="BotonJugar" type="TextureButton" parent="." unique_id=2135227177]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 59.0
+offset_top = 55.0
+offset_right = 392.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("3_v6xvi")
+
+[node name="BotonCreditos" type="TextureButton" parent="." unique_id=1400903967]
+offset_left = 59.0
+offset_top = 92.0
+offset_right = 392.0
+offset_bottom = 195.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("4_ic0jd")

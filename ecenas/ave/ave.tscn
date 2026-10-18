@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://8bbx3nemx0l1"]
+
+[ext_resource type="Script" uid="uid://cjhp704axdmt0" path="res://ecenas/ave/ave.gd" id="1_nkiie"]
+[ext_resource type="Texture2D" uid="uid://bromr40bj7xuu" path="res://ecenas/ave/ave1.png" id="1_sqjr2"]
+[ext_resource type="Texture2D" uid="uid://daopcb3xhweib" path="res://ecenas/ave/ave2.png" id="2_nkiie"]
+[ext_resource type="Texture2D" uid="uid://cnyf7shgl0l8y" path="res://ecenas/ave/ave3.png" id="3_va5id"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3xxyf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_sqjr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nkiie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_va5id")
+}],
+"loop": 1,
+"name": &"volar",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t2ebp"]
+radius = 12.0415945
+
+[node name="ave" type="Area2D" unique_id=1721935808]
+script = ExtResource("1_nkiie")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1803891935]
+position = Vector2(-7.1054274e-15, 0)
+scale = Vector2(0.042311925, 0.038949274)
+sprite_frames = SubResource("SpriteFrames_3xxyf")
+animation = &"volar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=877834761]
+shape = SubResource("CircleShape2D_t2ebp")

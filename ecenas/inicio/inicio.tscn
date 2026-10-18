@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bi8jkiuuhytfx"]
+
+[ext_resource type="Script" uid="uid://2f4kqtgqhvel" path="res://ecenas/inicio/inicio.gd" id="1_m7jwy"]
+[ext_resource type="PackedScene" uid="uid://dlurygkkwum0m" path="res://ecenas/ecena-principal/ecena_principal.tscn" id="2_aye7u"]
+[ext_resource type="Texture2D" uid="uid://bupifyrb6q5vx" path="res://ecenas/inicio/titulo.png" id="3_4lfil"]
+[ext_resource type="FontFile" uid="uid://8t2tr5bbalji" path="res://assets/fonts/Arcade Raiders.ttf" id="3_iss63"]
+[ext_resource type="Texture2D" uid="uid://365ngaqrbnj" path="res://fondos/fondoinicio.jpg" id="5_iss63"]
+
+[node name="Inicio" type="Control" unique_id=683842618]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m7jwy")
+escena_juego = ExtResource("2_aye7u")
+imagen_titulo = ExtResource("3_4lfil")
+texto_titulo = ""
+fuente = ExtResource("3_iss63")
+texto_controles = ""
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=68221859]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 651.0
+texture = ExtResource("5_iss63")
+expand_mode = 1

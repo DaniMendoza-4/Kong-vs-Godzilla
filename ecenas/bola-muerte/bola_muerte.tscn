@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://hyxm6rx634qi"]
+
+[ext_resource type="Script" uid="uid://gipuj0cnnds3" path="res://ecenas/bola-muerte/bola_muerte.gd" id="1_6p80s"]
+[ext_resource type="Texture2D" uid="uid://blur6espeareo" path="res://bolas-fuego/daño-muerte-izquierda.png" id="1_t7rcc"]
+[ext_resource type="Texture2D" uid="uid://bo4pdx61tifjv" path="res://bolas-fuego/daño-muerte-arriba.png" id="3_17wb5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xxyf"]
+radius = 112.53888
+
+[node name="bola_muerte" type="Area2D" unique_id=541693466]
+collision_mask = 0
+script = ExtResource("1_6p80s")
+textura_horizontal = ExtResource("1_t7rcc")
+textura_vertical = ExtResource("3_17wb5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=245332060]
+position = Vector2(-9.536743e-07, -4.7683716e-07)
+scale = Vector2(0.047926012, 0.045557223)
+texture = ExtResource("1_t7rcc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=817769917]
+position = Vector2(-2.8755617, 0.501129)
+scale = Vector2(0.047926012, 0.045557223)
+shape = SubResource("CircleShape2D_3xxyf")

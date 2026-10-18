@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b736dw8oo8mh2"]
+
+[ext_resource type="Script" uid="uid://bvxpx6733fudf" path="res://ecenas/diamante/diamante.gd" id="1_18d0g"]
+[ext_resource type="Texture2D" uid="uid://c7xhb6f0dldx3" path="res://tileset/diamante/diamante.png" id="2_mn1bu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xxyf"]
+size = Vector2(10.5, 9.5)
+
+[node name="diamante" type="Node2D" unique_id=231400522 node_paths=PackedStringArray("area_2D")]
+script = ExtResource("1_18d0g")
+area_2D = NodePath("Area2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=702920943]
+position = Vector2(-1.4901161e-08, 5.9604645e-08)
+scale = Vector2(0.07954545, 0.073076926)
+texture = ExtResource("2_mn1bu")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1567513803]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=375262601]
+shape = SubResource("RectangleShape2D_3xxyf")

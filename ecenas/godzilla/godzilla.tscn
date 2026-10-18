@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://b77hwbtev6uub"]
+
+[ext_resource type="Script" uid="uid://qpxgw4swuvba" path="res://ecenas/godzilla/godzilla.gd" id="1_vgo53"]
+[ext_resource type="Texture2D" uid="uid://cxjfjuslixlvc" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/atomico1.png" id="2_y8iuc"]
+[ext_resource type="Texture2D" uid="uid://bq8mpmg72qcat" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/atomico2.png" id="3_j03jd"]
+[ext_resource type="Texture2D" uid="uid://b5cedu6ih6tck" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/caminar1.png" id="6_vgo53"]
+[ext_resource type="Texture2D" uid="uid://dbsxqrc3gg8ic" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/caminar2.png" id="7_y8iuc"]
+[ext_resource type="Texture2D" uid="uid://c14xrkaiaadc2" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/caminar3.png" id="8_j03jd"]
+[ext_resource type="Texture2D" uid="uid://b72t2tu08oyqg" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/daño1.png" id="13_j7srj"]
+[ext_resource type="Texture2D" uid="uid://cx3l1ypjohx0p" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/golpe_cola1.png" id="13_vgo53"]
+[ext_resource type="Texture2D" uid="uid://cbglgyhx8phm0" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/daño2.png" id="14_lasbn"]
+[ext_resource type="Texture2D" uid="uid://cv1us5r0o1q15" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/golpe_cola2.png" id="14_y8iuc"]
+[ext_resource type="Texture2D" uid="uid://bjb6j7a2e35wr" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/golpe_cola3.png" id="15_j03jd"]
+[ext_resource type="Texture2D" uid="uid://cvsetr8rutgpo" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/daño3.png" id="15_uwlxu"]
+[ext_resource type="Texture2D" uid="uid://b7ble4mxvxydu" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/daño4.png" id="16_rmfbd"]
+[ext_resource type="Texture2D" uid="uid://dpnm68rtlncal" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/derrotado1.png" id="17_26e2a"]
+[ext_resource type="Texture2D" uid="uid://bgha2rdp77yvh" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/derrotado2.png" id="18_rxuni"]
+[ext_resource type="Texture2D" uid="uid://bglhw2ebn1n1y" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/derrotado3.png" id="19_jim6v"]
+[ext_resource type="Texture2D" uid="uid://dpg2c5dmscsa3" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/derrotado4.png" id="20_vnu2c"]
+[ext_resource type="Texture2D" uid="uid://c5j64vduyhxb7" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/reposo1.png" id="21_xsp1y"]
+[ext_resource type="Texture2D" uid="uid://cy2do80f3s3re" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/reposo2.png" id="22_gy1ns"]
+[ext_resource type="Texture2D" uid="uid://ceuqlhawbvalg" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/salto1.png" id="24_5wtxw"]
+[ext_resource type="Texture2D" uid="uid://rptiotl2vfb6" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/salto2.png" id="25_x6ic4"]
+[ext_resource type="Texture2D" uid="uid://hde6l2mdtgrf" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/salto3.png" id="26_i0hl6"]
+[ext_resource type="Texture2D" uid="uid://wwctvn1m8rb4" path="res://ecenas/godzilla/sprite-frames-personaje-godzilla/salto4.png" id="27_j7srj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6mnt1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y8iuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j03jd")
+}],
+"loop": 1,
+"name": &"aliento_atomico",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_vgo53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y8iuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j03jd")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_26e2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_rxuni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jim6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vnu2c")
+}],
+"loop": 1,
+"name": &"derrotado_muerte",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_vgo53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_y8iuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_j03jd")
+}],
+"loop": 1,
+"name": &"golpe_cola",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_j7srj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lasbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_uwlxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rmfbd")
+}],
+"loop": 1,
+"name": &"recibe_daño",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_gy1ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_xsp1y")
+}],
+"loop": 1,
+"name": &"reposo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_5wtxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_x6ic4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_i0hl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_j7srj")
+}],
+"loop": 1,
+"name": &"salto",
+"speed": 5.0
+}]
+
+[node name="Godzilla" type="Node2D" unique_id=209467913]
+script = ExtResource("1_vgo53")
+limite_izquierdo = -185.0
+limite_derecho = 185.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=11543729]
+scale = Vector2(0.1676441, 0.16590908)
+sprite_frames = SubResource("SpriteFrames_6mnt1")
+animation = &"caminar"
+offset = Vector2(0, -110.5)

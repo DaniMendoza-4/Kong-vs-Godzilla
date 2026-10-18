@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dlurygkkwum0m"]
+
+[ext_resource type="PackedScene" uid="uid://csc322ww75008" path="res://ecenas/nivel-1/nivel_1.tscn" id="1_vpe0g"]
+[ext_resource type="Script" uid="uid://b1nkfty2afm7f" path="res://ecenas/ecena-principal/ecena_principal.gd" id="1_xrv0k"]
+[ext_resource type="PackedScene" uid="uid://bt5dfukik242w" path="res://ecenas/nivel-2/nivel_2.tscn" id="3_2b616"]
+[ext_resource type="Script" uid="uid://dg82w5tijmk3n" path="res://ecenas/ecena-principal/interfaz.gd" id="3_xrv0k"]
+[ext_resource type="PackedScene" uid="uid://gywqvwdq6u1j" path="res://ecenas/nivel-3/nivel_3.tscn" id="4_njpka"]
+[ext_resource type="PackedScene" uid="uid://vxv4dg6sfsss" path="res://ecenas/nivel-4/nivel_4.tscn" id="5_a2bht"]
+[ext_resource type="PackedScene" uid="uid://2lwdr4n2rk01" path="res://ecenas/nivel-5/nivel_5.tscn" id="6_wh4kl"]
+
+[sub_resource type="FontVariation" id="FontVariation_x5pt2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m2q3o"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5u2uf"]
+
+[node name="EcenaPrincipal" type="Node2D" unique_id=1513744400]
+script = ExtResource("1_xrv0k")
+niveles = Array[PackedScene]([ExtResource("1_vpe0g"), ExtResource("3_2b616"), ExtResource("4_njpka"), ExtResource("5_a2bht"), ExtResource("6_wh4kl")])
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=434926510]
+zoom = Vector2(2.4, 2.26)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=400084362]
+
+[node name="Interfaz" type="Control" parent="HUD" unique_id=261893585]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_right = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_xrv0k")
+
+[node name="Personaje" type="Label" parent="HUD/Interfaz" unique_id=878972419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 16.5
+offset_right = -961.0
+offset_bottom = -596.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_x5pt2")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_m2q3o")
+theme_override_styles/focus = SubResource("StyleBoxTexture_5u2uf")
+text = "Vida Kong 🐵"
+
+[node name="BarraVida" type="ProgressBar" parent="HUD/Interfaz" unique_id=519484673]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 16.0
+offset_right = 440.0
+offset_bottom = 46.0
+value = 100.0
+
+[node name="ContadorDiamantes" type="Label" parent="HUD/Interfaz" unique_id=1768012826]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -302.0
+offset_top = 16.0
+offset_right = -152.0
+offset_bottom = 46.0
+grow_horizontal = 0
+text = "💎 0/4"
+
+[node name="TextoNivel" type="Label" parent="HUD/Interfaz" unique_id=1178663285]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -112.0
+offset_top = 16.0
+offset_right = 8.0
+offset_bottom = 46.0
+grow_horizontal = 0
+text = "NIVEL 1"

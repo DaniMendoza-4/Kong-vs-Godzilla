@@ -1,0 +1,61 @@
+[gd_scene format=4 uid="uid://csc322ww75008"]
+
+[ext_resource type="Texture2D" uid="uid://bjy6qqxs1s15t" path="res://fondos/fondo1.png" id="1_j1hin"]
+[ext_resource type="PackedScene" uid="uid://pha6ppbqkk3c" path="res://ecenas/bordes/bordes.tscn" id="1_pg3q4"]
+[ext_resource type="TileSet" uid="uid://yqbe5krk7f4h" path="res://tileset/kongvsgodzilla.tres" id="2_qfcr6"]
+[ext_resource type="PackedScene" uid="uid://6jvrreu22l6m" path="res://ecenas/personaje/personaje.tscn" id="3_0ruwa"]
+[ext_resource type="PackedScene" uid="uid://dcekljbq7fh5d" path="res://ecenas/contenedor-diamantes/contenedor_diamantes.tscn" id="4_28v3q"]
+[ext_resource type="PackedScene" uid="uid://b736dw8oo8mh2" path="res://ecenas/diamante/diamante.tscn" id="5_yhcpd"]
+[ext_resource type="Script" uid="uid://r5vwulf8rvld" path="res://ecenas/nivel-1/spawner_bolas.gd" id="7_akbfd"]
+[ext_resource type="PackedScene" uid="uid://dtpgw8sqpdmnp" path="res://ecenas/bola-leve/bola_leve.tscn" id="8_p8nmy"]
+[ext_resource type="PackedScene" uid="uid://hyxm6rx634qi" path="res://ecenas/bola-muerte/bola_muerte.tscn" id="9_n14le"]
+[ext_resource type="Script" uid="uid://de53cmthcfro3" path="res://ecenas/nivel-1/spawner_aves.gd" id="10_n14le"]
+[ext_resource type="PackedScene" uid="uid://8bbx3nemx0l1" path="res://ecenas/ave/ave.tscn" id="11_28v3q"]
+
+[node name="Nivel1" type="Node2D" unique_id=1408723838]
+
+[node name="fondo" type="Parallax2D" parent="." unique_id=344895781]
+
+[node name="imgfondo" type="Sprite2D" parent="fondo" unique_id=1966888885]
+position = Vector2(0.9999695, 8.499996)
+scale = Vector2(0.2525366, 0.26944757)
+texture = ExtResource("1_j1hin")
+
+[node name="bordes" parent="." unique_id=73059652 instance=ExtResource("1_pg3q4")]
+tile_map_data = PackedByteArray("AAAAAPj/AgACAAUAAAANAPj/AgACAAUAAADy//j/AgACAAUAAADz//j/AgACAAUAAAD0//j/AgACAAUAAAD1//j/AgACAAUAAAD2//j/AgACAAUAAAD3//j/AgACAAUAAAD4//j/AgACAAUAAAD5//j/AgACAAUAAAD6//j/AgACAAUAAAD7//j/AgACAAUAAAD8//j/AgACAAUAAAD9//j/AgACAAUAAAD+//j/AgACAAUAAAD///j/AgACAAUAAAABAPj/AgACAAUAAAACAPj/AgACAAUAAAADAPj/AgACAAUAAAAEAPj/AgACAAUAAAAFAPj/AgACAAUAAAAGAPj/AgACAAUAAAAHAPj/AgACAAUAAAAIAPj/AgACAAUAAAAJAPj/AgACAAUAAAAKAPj/AgACAAUAAAALAPj/AgACAAUAAAAMAPj/AgACAAUAAADx//f/AgACAAUAAADx//j/AgACAAUAAADx//n/AgACAAUAAADx//r/AgACAAUAAADx//v/AgACAAUAAADx//z/AgACAAUAAADx//3/AgACAAUAAADx//7/AgACAAUAAADx////AgACAAUAAADx/wAAAgACAAUAAADx/wEAAgACAAUAAADx/wIAAgACAAUAAADx/wMAAgACAAUAAADx/wQAAgACAAUAAADx/wUAAgACAAUAAADx/wYAAgACAAUAAADx/wcAAgACAAUAAADx/wgAAgACAAUAAADy/wgAAgACAAUAAADz/wgAAgACAAUAAAD0/wgAAgACAAUAAAD1/wgAAgACAAUAAAD2/wgAAgACAAUAAAD3/wgAAgACAAUAAAD4/wgAAgACAAUAAAD5/wgAAgACAAUAAAD6/wgAAgACAAUAAAD7/wgAAgACAAUAAAD8/wgAAgACAAUAAAD9/wgAAgACAAUAAAD+/wgAAgACAAUAAAD//wgAAgACAAUAAAAAAAgAAgACAAUAAAABAAgAAgACAAUAAAACAAgAAgACAAUAAAADAAgAAgACAAUAAAAEAAgAAgACAAUAAAAFAAgAAgACAAUAAAAGAAgAAgACAAUAAAAHAAgAAgACAAUAAAAIAAgAAgACAAUAAAAJAAgAAgACAAUAAAAKAAgAAgACAAUAAAALAAgAAgACAAUAAAAMAAgAAgACAAUAAAANAAgAAgACAAUAAAAOAAgAAgACAAUAAAAOAAcAAgACAAUAAAAOAAYAAgACAAUAAAAOAAUAAgACAAUAAAAOAAQAAgACAAUAAAAOAAMAAgACAAUAAAAOAAIAAgACAAUAAAAOAAEAAgACAAUAAAAOAAAAAgACAAUAAAAOAP//AgACAAUAAAAOAP7/AgACAAUAAAAOAP3/AgACAAUAAAAOAPz/AgACAAUAAAAOAPv/AgACAAUAAAAOAPr/AgACAAUAAAAOAPn/AgACAAUAAAAOAPj/AgACAAUAAAAOAPf/AgACAAUAAADy//f/AgACAAUAAADz//f/AgACAAUAAAD0//f/AgACAAUAAAD1//f/AgACAAUAAAD2//f/AgACAAUAAAD3//f/AgACAAUAAAD4//f/AgACAAUAAAD5//f/AgACAAUAAAD6//f/AgACAAUAAAD7//f/AgACAAUAAAD8//f/AgACAAUAAAD9//f/AgACAAUAAAD+//f/AgACAAUAAAD///f/AgACAAUAAAAAAPf/AgACAAUAAAABAPf/AgACAAUAAAACAPf/AgACAAUAAAADAPf/AgACAAUAAAAEAPf/AgACAAUAAAAFAPf/AgACAAUAAAAGAPf/AgACAAUAAAAHAPf/AgACAAUAAAAIAPf/AgACAAUAAAAJAPf/AgACAAUAAAAKAPf/AgACAAUAAAALAPf/AgACAAUAAAAMAPf/AgACAAUAAAANAPf/AgACAAUAAAA=")
+
+[node name="nivel" type="TileMapLayer" parent="." unique_id=1639555713]
+tile_map_data = PackedByteArray("AADy//z/AgAEAAAAAADz//z/AgAGAAAAAAD0//z/AgADAAAAAAD0//3/AgADAAIAAADy//7/AgAEAAAAAADz//7/AgAFAAAAAAD0//7/AgAFAAAAAAD1//7/AgAFAAAAAAD2//7/AgAGAAAAAAD2////AgADAAAAAAD2/wAAAgADAAIAAAD2/wEAAgAEAAAAAAD3/wEAAgAFAAAAAAD5/wEAAgAGAAAAAAD5/wIAAgADAAAAAAD5/wMAAgADAAEAAAD5/wQAAgADAAIAAADy/wcAAgAIAAMAAADz/wcAAgAJAAMAAAD0/wcAAgAIAAMAAAD1/wcAAgAJAAMAAAD2/wcAAgAIAAMAAAD3/wcAAgAJAAMAAAD4/wcAAgAIAAMAAAD5/wcAAgAJAAMAAADy//3/AgAFAAMAAADz//3/AgAFAAMAAAD5/wUAAgAIAAMAAAD6/wUAAgAJAAMAAAD7/wUAAgAJAAMAAAD0/wIAAgAIAAMAAAD1/wIAAgAJAAMAAAD//wUAAgAGAAEAAAD//wYAAgAGAAIAAAD//wcAAgAIAAUAAADy/wUAAgAFAAQAAADy/wYAAgAFAAUAAADz/wUAAgAGAAQAAADz/wYAAgAGAAUAAAAAAAYAAgAFAAQAAAAAAAcAAgAFAAUAAAABAAYAAgAGAAQAAAABAAcAAgAGAAUAAAAAAAQAAgAFAAQAAAAAAAUAAgAFAAUAAAABAAQAAgAGAAQAAAABAAUAAgAGAAUAAAAAAAIAAgAFAAQAAAAAAAMAAgAFAAUAAAABAAIAAgAGAAQAAAABAAMAAgAGAAUAAAAMAP3/AgAFAAQAAAAMAP7/AgAFAAUAAAANAP3/AgAGAAQAAAANAP7/AgAGAAUAAAAKAP3/AgAFAAQAAAAKAP7/AgAFAAUAAAALAP3/AgAGAAQAAAALAP7/AgAGAAUAAAAIAP3/AgAFAAQAAAAIAP7/AgAFAAUAAAAJAP3/AgAGAAQAAAAJAP7/AgAGAAUAAAAMAAQAAgAIAAMAAAANAAQAAgAJAAMAAAAKAAQAAgAIAAMAAAALAAQAAgAJAAMAAAAIAP//AgAHAAUAAAAJAP//AgAHAAUAAAAKAP//AgAHAAUAAAALAP//AgAHAAUAAAD0////AgAHAAUAAAD1////AgAHAAUAAAD0/wYAAgAJAAUAAAACAAYAAgAJAAUAAAACAAcAAgAJAAUAAAALAAUAAgAAAAAAAAALAAYAAgAAAAEAAAALAAcAAgAAAAIAAAAMAAUAAgABAAAAAAAMAAYAAgABAAEAAAAMAAcAAgABAAIAAAANAAUAAgACAAAAAAANAAYAAgACAAEAAAANAAcAAgACAAIAAAAJAAQAAgAIAAMAAAAIAAQAAgAIAAMAAAADAP//AgAIAAMAAAAEAP//AgAJAAMAAAAFAP//AgAIAAMAAAAGAP//AgAJAAMAAAD6/wEAAgAIAAMAAAD7/wEAAgAIAAMAAAD8/wEAAgAJAAMAAAD+/wMAAgAIAAMAAAD//wMAAgAJAAMAAAAMAAIAAgAFAAQAAAAMAAMAAgAFAAUAAAANAAIAAgAGAAQAAAANAAMAAgAGAAUAAAAKAAIAAgAFAAQAAAAKAAMAAgAFAAUAAAALAAIAAgAGAAQAAAALAAMAAgAGAAUAAAAKAAcAAgAIAAUAAAAJAAcAAgAIAAUAAAAEAP7/AgAIAAUAAAD5/wAAAgAIAAUAAAD4/wEAAgAFAAAAAAAFAAMAAgAJAAMAAAADAPv/AgAIAAUAAAAEAAMAAgAIAAMAAAANAP//AgAHAAEAAAAGAAYAAgAIAAMAAAAHAAYAAgAJAAMAAAD+////AgAIAAMAAAD/////AgAJAAMAAAABAPz/AgAJAAQAAAACAPz/AgAJAAQAAAADAPz/AgAJAAQAAAAEAPz/AgAJAAQAAAAFAPz/AgAJAAQAAAAAAPz/AgAJAAQAAAD8/wUAAgAJAAMAAAD5//z/AgAIAAMAAAD6//z/AgAJAAMAAAD7//z/AgAIAAMAAAD8//z/AgAJAAMAAAA=")
+tile_set = ExtResource("2_qfcr6")
+
+[node name="ContenedorDiamantes" parent="." unique_id=1604877687 instance=ExtResource("4_28v3q")]
+
+[node name="diamante1" parent="ContenedorDiamantes" unique_id=231400522 instance=ExtResource("5_yhcpd")]
+position = Vector2(113, 113)
+
+[node name="diamante2" parent="ContenedorDiamantes" unique_id=1792543048 instance=ExtResource("5_yhcpd")]
+position = Vector2(210, 21)
+
+[node name="diamante3" parent="ContenedorDiamantes" unique_id=1787550309 instance=ExtResource("5_yhcpd")]
+position = Vector2(-180, 19)
+
+[node name="diamante4" parent="ContenedorDiamantes" unique_id=1612192599 instance=ExtResource("5_yhcpd")]
+position = Vector2(-83, -77)
+
+[node name="Personaje-kong" parent="." unique_id=1099182927 instance=ExtResource("3_0ruwa")]
+position = Vector2(-85, 39)
+
+[node name="SpawnerBolas" type="Node2D" parent="." unique_id=203591320]
+script = ExtResource("7_akbfd")
+escena_bola_leve = ExtResource("8_p8nmy")
+escena_bola_muerte = ExtResource("9_n14le")
+
+[node name="Timer" type="Timer" parent="SpawnerBolas" unique_id=186112515]
+autostart = true
+
+[node name="SpawnerAves" type="Node2D" parent="." unique_id=1610207054]
+script = ExtResource("10_n14le")
+escena_ave = ExtResource("11_28v3q")
+segundos_entre_aves = 10.0
+
+[connection signal="timeout" from="SpawnerBolas/Timer" to="SpawnerBolas" method="_on_timer_timeout"]
